@@ -1,0 +1,39 @@
+body{
+  background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(pic24.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.login-box{
+  max-width: 700px;
+  float: none;
+  margin: 90px auto;
+}
+.login-left{
+  background: rgba(211,211,211,0.5);
+  padding: 80px;
+}
+.login-right{
+  background: #fff;
+  padding: 80px;
+}
+.form-control{
+  background-color: transparent !important;
+}
+
+.inputfile {
+  /* visibility: hidden etc. wont work */
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile:focus + label {
+  /* keyboard navigation */
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+.inputfile + label * {
+  pointer-events: none;
+}

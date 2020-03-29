@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style20.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title> Student Registration </title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-box">
+        <div class="row">
+          <div class="col-md-6  login-left">
+             <h2> Student Form </h2>
+             <form action="data.php" method="post">
+            <div class="form-group">
+            <label> Name </label>
+            <input type="text" name="user" class="form-control" required>
+           </div>
+           <div class="form-group">
+           <label> Department </label>
+           <select input name="depart">
+             <option> CE </option>
+             <option> IT </option>
+             <option> ELECTRICAL </option>
+             <option> CIVIL </option>
+             <option> MECHANICAL </option>
+           </select>
+          </div>
+          <div class="form-group">
+          <label> Enrollment no </label>
+          <input type="roll" name="roll" class="form-control" required>
+         </div>
+           <div class="form-group">
+           <label> Sem </label>
+           <select input name="sem">
+             <option> 1 </option>
+             <option> 2 </option>
+             <option> 3 </option>
+             <option> 4 </option>
+             <option> 5 </option>
+             <option> 6 </option>
+             <option> 7 </option>
+             <option> 8 </option>
+           </select>
+          </div>
+          <div class="form-group">
+          <label> Gender </label>
+          <br>
+          <input type="radio" id="male" name="gender" value="male">
+         <label for="male">Male</label><br>
+         <input type="radio" id="female" name="gender" value="female">
+         <label for="female">Female</label><br>
+         <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        </div>
+        <div class="form-group">
+        <label> Contact No </label>
+        <input type="contact" name="contact" class="form-control" required>
+        </div>
+        <div class="form-group">
+        <label> Address </label>
+        <input type="address" name="address" class="form-control" required>
+        </div>
+        <div class="form-group">
+         <button> <a href="p1.html"> Upload CV </a> </button>
+        </div>
+        <div class="form-group">
+         <button> <a href="p2.html"> Upload Project </a> </button>
+        </div>
+          <button type="submit" class="btn btn-primary"> Submit </button>
+          </form>
+       </div>
+       <div class="col-md-6  login-right">
+          <h2> Intenship Form </h2>
+          <form action="session.php" method="post">
+         <div class="form-group">
+         <label> Name </label>
+         <input type="text" name="user" class="form-control" required>
+        </div>
+        <div class="form-group">
+        <label> Email </label>
+        <input type="email" name="email" class="form-control" required>
+       </div>
+       <div class="form-group">
+       <label> Contact No </label>
+       <input type="contact" name="contact" class="form-control" required>
+       </div>
+       <div class="form-group">
+       <label> Gender </label>
+       <br>
+       <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+     <label for="other">Other</label>
+     </div>
+     <div class="form-group">
+     <label> Skills </label>
+     <input type="text" name="skills" class="form-control" required>
+    </div>
+    <div class="form-group">
+    <label>  Select Internship </label>
+    <br>
+    <input type="radio" id="paid" name="internship" value="paid">
+   <label for="paid">Paid Intenship</label><br>
+   <input type="radio" id="summer" name="internship" value="summer">
+   <label for="summer">Summer Intenship</label><br>
+   <input type="radio" id="learn" name="internship" value="learn">
+  <label for="learn">Learning Internship</label>
+  <div class="form-group">
+   <button> <a href="p1.html"> Upload CV </a> </button>
+  </div>
+       <button type="submit" class="btn btn-primary"> Submit </button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
